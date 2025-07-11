@@ -1,11 +1,11 @@
 # GScore-BE
 
 ## Installation
-1. Clone the repository:
+1. Clone the repository:<br/><br/>
    <pre> git clone https://github.com/nguyencanhduy12840/GScore-BE.git 
       cd GScore-BE 
    </pre>
-2. Install Maven:
+2. Install Maven:<br/><br/>
    Check if Maven is already installed:
    <pre>mvn -v</pre>
    - If not, follow these steps:<br/><br/>
@@ -24,7 +24,7 @@
    <pre>mvn spring-boot:run</pre>
 
 ## API Documentation
-This project uses Swagger (via Springdoc/OpenAPI) to provide interactive API documentation for testing and exploring endpoints directly in the browser.
+This project uses Swagger (via Springdoc/OpenAPI) to provide interactive API documentation for testing and exploring endpoints directly in the browser.<br/><br/>
 <pre>```http://localhost:8080/swagger-ui/index.html```</pre>
 
 
