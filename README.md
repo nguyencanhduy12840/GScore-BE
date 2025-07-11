@@ -8,19 +8,19 @@
 2. Install Maven:
    Check if Maven is already installed:
    <pre>mvn -v</pre>
-   If not, follow these steps:<br/>
-   Install Maven:<br/>
-   Download from: https://maven.apache.org/download.cgi<br/>
-   Extract the archive<br/>
-   Set the MAVEN_HOME environment variable<br/>
-   Add MAVEN_HOME/bin to your system PATH<br/>
-   After setup, run mvn -v again to verify installation.<br/>
-3. Configure the Database:<br/>
-   In src/main/resources/application.properties:<br/>
-   <pre>spring.datasource.username=<your_username>
-      spring.datasource.password=<your_password></pre>
-   Replace your_username, and your_password with your actual database credentials.<br/>
-4. Run the Project
+   If not, follow these steps:<br/><br/>
+   Install Maven:<br/><br/>
+   Download from: https://maven.apache.org/download.cgi<br/><br/>
+   Extract the archive<br/><br/>
+   Set the MAVEN_HOME environment variable<br/><br/>
+   Add MAVEN_HOME/bin to your system PATH<br/><br/>
+   After setup, run mvn -v again to verify installation.<br/><br/>
+3. Configure the Database:<br/><br/>
+   In src/main/resources/application.properties:<br/><br/>
+   <pre>spring.datasource.username=your_username
+      spring.datasource.password=your_password</pre>
+   Replace your_username, and your_password with your actual database credentials.<br/><br/>
+4. Run the Project<br/><br/>
    <pre>mvn spring-boot:run</pre>
 
 ## API Documentation
