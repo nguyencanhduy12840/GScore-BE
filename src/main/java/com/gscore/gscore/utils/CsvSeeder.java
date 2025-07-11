@@ -9,9 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import java.io.BufferedReader;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.io.InputStreamReader;
 import java.util.*;
 
 @Component
@@ -21,7 +19,7 @@ public class CsvSeeder {
     private final JdbcTemplate jdbcTemplate;
 
     private static final int BATCH_SIZE = 10_000;
-    private static final String CSV_PATH = "src/main/resources/diem_thi_thpt_2024.csv";
+    private static final String CSV_FILE_NAME = "diem_thi_thpt_2024.csv";
 
     private static final String INSERT_SUBJECT_SQL =
             "INSERT IGNORE INTO subject (code, name) VALUES (?, ?)";
@@ -41,7 +39,7 @@ public class CsvSeeder {
         long start = System.currentTimeMillis();
         System.out.println("🚀 Starting data seeding using JdbcTemplate...");
 
-        // 1. Seed subjects if not already present
+        // 1. Seed subjects
         jdbcTemplate.batchUpdate(INSERT_SUBJECT_SQL, List.of(
                 new Object[]{"toan", "Math"},
                 new Object[]{"ngu_van", "Literature"},
@@ -54,9 +52,10 @@ public class CsvSeeder {
                 new Object[]{"gdcd", "Civic Education"}
         ));
 
-        // 2. Read CSV
-        Path path = Paths.get(CSV_PATH);
-        try (BufferedReader br = Files.newBufferedReader(path);
+        // 2. Read CSV from classpath
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(
+                Objects.requireNonNull(getClass().getClassLoader().getResourceAsStream(CSV_FILE_NAME))
+        ));
              CSVParser parser = new CSVParser(br, CSVFormat.DEFAULT.withFirstRecordAsHeader())) {
 
             List<Object[]> studentParams = new ArrayList<>();
