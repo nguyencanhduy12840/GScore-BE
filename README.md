@@ -1,11 +1,15 @@
 # GScore-BE
 
 ## Installation
+
 1. Clone the repository:
-   <pre> ```bash git clone https://github.com/nguyencanhduy12840/GScore-BE.git``` </pre>
+
+```bash
+git clone https://github.com/nguyencanhduy12840/GScore-BE.git
+cd GScore-BE
 2. Install Maven:
    Check if Maven is already installed:
-   <pre> ```mvn -v``` </pre>
+   <pre>mvn -v</pre>
    If not, follow these steps:
    Install Maven:
    Download from: https://maven.apache.org/download.cgi
