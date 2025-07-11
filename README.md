@@ -17,14 +17,13 @@
    - After setup, run mvn -v again to verify installation.<br/><br/>
 3. Configure the Database:<br/><br/>
    In src/main/resources/application.properties:<br/><br/>
-   <pre>spring.datasource.username=your_username
-        spring.datasource.password=your_password</pre>
+   <pre>spring.datasource.username=your_username<br/>spring.datasource.password=your_password</pre>
    Replace your_username, and your_password with your actual database credentials.<br/><br/>
 4. Run the Project<br/><br/>
    <pre>mvn spring-boot:run</pre>
 
 ## API Documentation
 This project uses Swagger (via Springdoc/OpenAPI) to provide interactive API documentation for testing and exploring endpoints directly in the browser.<br/>
-<pre>```http://localhost:8080/swagger-ui/index.html```</pre>
+<pre>http://localhost:8080/swagger-ui/index.html</pre>
 
 
