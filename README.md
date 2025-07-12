@@ -16,7 +16,7 @@
      - After setup, run mvn -v again to verify installation.<br/><br/>
 3. Initialize Database:<br/><br/>
    - You can find the SQL script to initialize the database [GScore.sql](./GScore.sql)<br/>
-   - Then download file SQL script and run it MySQL Workbench.<br/><br/>
+   - Then download file SQL script and run it in MySQL Workbench.<br/><br/>
 4. Configure the Database:<br/><br/>
    In src/main/resources/application.properties:<br/>
    <pre>spring.datasource.username=your_username<br/>spring.datasource.password=your_password</pre>
