@@ -5,20 +5,20 @@
    <pre>git clone https://github.com/nguyencanhduy12840/GScore-BE.git<br/>cd GScore-BE 
    </pre>
 2. Install Maven:<br/><br/>
-   Check if Maven is already installed::<br/><br/>
+   Check if Maven is already installed::<br/>
    <pre>mvn -v</pre>
-   - If not, follow these steps:<br/><br/>
-   - Install Maven:<br/><br/>
-   - Download from: https://maven.apache.org/download.cgi<br/><br/>
-   - Extract the archive<br/><br/>
-   - Set the MAVEN_HOME environment variable<br/><br/>
-   - Add MAVEN_HOME/bin to your system PATH<br/><br/>
-   - After setup, run mvn -v again to verify installation.<br/><br/>
+   - If not, follow these steps:<br/>
+     1. Install Maven:<br/>
+     2. Download from: https://maven.apache.org/download.cgi<br/>
+     3. Extract the archive<br/>
+     4. Set the MAVEN_HOME environment variable<br/>
+     5. Add MAVEN_HOME/bin to your system PATH<br/>
+     6. After setup, run mvn -v again to verify installation.<br/><br/>
 3. Initialize Database:<br/><br/>
    - You can find the SQL script to initialize the database [GScore.sql](./GScore.sql)<br/>
-   - Then download file SQL script and run it MySQL Workbench.
+   - Then download file SQL script and run it MySQL Workbench.<br/><br/>
 4. Configure the Database:<br/><br/>
-   In src/main/resources/application.properties:<br/><br/>
+   In src/main/resources/application.properties:<br/>
    <pre>spring.datasource.username=your_username<br/>spring.datasource.password=your_password</pre>
    Replace your_username, and your_password with your actual database credentials.<br/><br/>
 5. Run the Project<br/><br/>
