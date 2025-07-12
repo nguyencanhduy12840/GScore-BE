@@ -5,15 +5,15 @@
    <pre>git clone https://github.com/nguyencanhduy12840/GScore-BE.git<br/>cd GScore-BE 
    </pre>
 2. Install Maven:<br/><br/>
-   Check if Maven is already installed::<br/>
+   Check if Maven is already installed:<br/>
    <pre>mvn -v</pre>
    - If not, follow these steps:<br/>
-     1. Install Maven:<br/>
-     2. Download from: https://maven.apache.org/download.cgi<br/>
-     3. Extract the archive<br/>
-     4. Set the MAVEN_HOME environment variable<br/>
-     5. Add MAVEN_HOME/bin to your system PATH<br/>
-     6. After setup, run mvn -v again to verify installation.<br/><br/>
+     - Install Maven:<br/>
+     - Download from: https://maven.apache.org/download.cgi<br/>
+     - Extract the archive<br/>
+     - Set the MAVEN_HOME environment variable<br/>
+     - Add MAVEN_HOME/bin to your system PATH<br/>
+     - After setup, run mvn -v again to verify installation.<br/><br/>
 3. Initialize Database:<br/><br/>
    - You can find the SQL script to initialize the database [GScore.sql](./GScore.sql)<br/>
    - Then download file SQL script and run it MySQL Workbench.<br/><br/>
